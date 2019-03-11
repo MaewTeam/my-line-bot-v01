@@ -16,7 +16,7 @@ line_bot_api = LineBotApi('IkA0NfE3wTrE7lxdnwE2DFgyAWpvOtTMTsXlNt96hJSIBtY/CZF/T
 #Channel access token (long-lived) 
 handler = WebhookHandler('7cae6d4c3810f294802285d6ccd82a77')
 
-#client.create(gearkey,gearsecret,appid,{'debugmode': True})
+client.create(gearkey,gearsecret,appid,{'debugmode': True})
 
 def connection():
 	print "Now I am connected with netpie"
@@ -26,7 +26,15 @@ def subscription(topic,message):
 
 @app.route("/")
 def hello():
+    client.setname("doraemon")
+    client.on_connect = connection
+    client.on_message = subscription
+    client.subscribe("/mails")
+    client.connect(True)	
     return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว"
+
+
+
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
