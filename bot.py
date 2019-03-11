@@ -18,7 +18,7 @@ handler = WebhookHandler('7cae6d4c3810f294802285d6ccd82a77')
 
 @app.route("/")
 def hello():
-    return "Hello World! Add microgear1.0"
+    return "Hello World! Add microgear1.00"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
