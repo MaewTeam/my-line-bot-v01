@@ -9,7 +9,7 @@ gearkey = "maewbot"
 gearsecret =  "R6Qxt5GF4FLe10S"
 appid = "LCvB4UmI5H99ShPKh4ypUXhP9"
 
-client.create(gearkey,gearsecret,appid,{'debugmode': True}
+#client.create(gearkey,gearsecret,appid,{'debugmode': True}
               
 app = Flask(__name__)
 
