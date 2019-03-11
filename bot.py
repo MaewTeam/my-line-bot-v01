@@ -9,7 +9,7 @@ gearkey = "maewbot"
 gearsecret =  "R6Qxt5GF4FLe10S"
 appid = "LCvB4UmI5H99ShPKh4ypUXhP9"
 
-#client.create(gearkey,gearsecret,appid,{'debugmode': True}
+client.create(gearkey,gearsecret,appid,{'debugmode': True}
               
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ handler = WebhookHandler('7cae6d4c3810f294802285d6ccd82a77')
 
 @app.route("/")
 def hello():
-    return "Hello World! Add microgear1.00"
+    return "Hello World! Add microgear1.02"
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
