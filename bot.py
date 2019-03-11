@@ -2,14 +2,13 @@ from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
-from microgear.client import client
+
 
 
 gearkey = "maewbot" 
 gearsecret =  "R6Qxt5GF4FLe10S"
 appid = "LCvB4UmI5H99ShPKh4ypUXhP9"
 
-#client.create(gearkey,gearsecret,appid,{'debugmode': True}
               
 app = Flask(__name__)
 
