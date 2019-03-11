@@ -3,8 +3,8 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
 
-import microgear.client as client
-import time
+#import microgear.client as client
+#import time
 
 gearkey = "R6Qxt5GF4FLe10S"
 gearsecret =  "LCvB4UmI5H99ShPKh4ypUXhP9"
@@ -16,7 +16,7 @@ line_bot_api = LineBotApi('IkA0NfE3wTrE7lxdnwE2DFgyAWpvOtTMTsXlNt96hJSIBtY/CZF/T
 #Channel access token (long-lived) 
 handler = WebhookHandler('7cae6d4c3810f294802285d6ccd82a77')
 
-client.create(gearkey,gearsecret,appid,{'debugmode': True})
+#client.create(gearkey,gearsecret,appid,{'debugmode': True})
 
 def connection():
 	print "Now I am connected with netpie"
