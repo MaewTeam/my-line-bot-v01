@@ -3,7 +3,7 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
 
-#import microgear.client as client
+import microgear.client as client
 #import time
 
 gearkey = "R6Qxt5GF4FLe10S"
