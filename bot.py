@@ -26,11 +26,6 @@ def subscription(topic,message):
 
 @app.route("/")
 def hello():
-    client.setname("doraemon")
-    client.on_connect = connection
-    client.on_message = subscription
-    client.subscribe("/mails")
-    client.connect(True)	
     return "Hello ถ้าข้อความนี้แสดง แสดงว่าคุณสามารถติดตั้งส่วนของHeroku สำเร็จ แล้ว"
 
 
